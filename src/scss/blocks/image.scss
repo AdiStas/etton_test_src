@@ -1,0 +1,18 @@
+.image {
+    padding-left: 0;
+    margin-top: 1px;
+}
+
+@media (max-width: 768px) {
+	.image {
+        padding: 0;
+
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .image {
+        margin-bottom: 28px;
+    }
+}

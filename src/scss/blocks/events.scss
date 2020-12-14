@@ -1,0 +1,149 @@
+.events {
+    padding-top: 55px;
+}
+
+.events__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.events__title {
+    color: #000;
+
+    font-family: $semi-bold;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.events__link {
+    color: #D83863;
+
+    font-family: $regular;
+    font-size: 14px;
+    line-height: 21px;
+
+    transition: all .5;
+
+    &:hover,
+    &:focus {
+        color: $violet;
+    }
+
+    &:active {
+        opacity: .5;
+    }
+}
+
+.event__body {
+    display: flex;
+    padding: 20px 30px;
+
+    background-color: #f3f5fe;
+    border-radius: 18px;
+}
+
+.event__date {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    margin-right: 25px;
+}
+
+.event__day {
+    color: #000;
+
+    font-family: $medium;
+    font-size: 10px;
+    line-height: 13px;
+    letter-spacing: 0.5px;
+
+    text-transform: uppercase;
+}
+
+.event__day-number {
+    font-family: $bold;
+    font-size: 28px;
+    line-height: 36px;
+
+    color: $violet;
+}
+
+.event__title {
+    font-family: $medium;
+    font-size: 14px;
+    line-height: 18px;
+
+    color: #000;
+}
+
+.event__time,
+.event__place {
+    padding-left: 20px;
+
+    font-family: $regular;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: $black;
+
+    position: relative;
+
+    &::before {
+        position: absolute;
+
+        content: "";
+        margin-top: -3px;
+        top: 0;
+        left: 0;
+
+        width: 16px;
+        height: 16px;
+    }
+}
+
+.event__time {
+    margin-bottom: 8px;
+
+    &::before {
+        background-image: url(../img/time.png);
+        background-size: 16px 16px;
+    }
+}
+
+.event__place {
+
+    &::before {
+        background-image: url(../img/pin.png);
+        background-size: 16px 16px;
+
+        transition: all .5;
+
+        &:hover,
+        &:focus {
+            color: $violet;
+        }
+
+        &:active {
+            opacity: .5;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .events {
+        padding-bottom: 55px;
+    }
+}
+
+@media (max-width: 576px) {
+    .events {
+        padding: 0;
+        margin-bottom: 40px;
+    }
+
+    .event__body {
+        padding: 20px 22px;
+    }
+}

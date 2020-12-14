@@ -1,0 +1,237 @@
+.candidate__wrapper {
+    justify-content: space-between;
+
+    padding-left: 20px;
+    padding-right: 2px;
+}
+
+.candidate__detail {
+    margin-bottom: 40px;
+
+    padding-top: 4px;
+    padding-left: 0;
+}
+
+.candidate__name {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 23px;
+    font-family: $bold;
+
+    color: #000;
+}
+
+.candidate__activity {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 20px;
+    font-family: $regular;
+}
+
+.election__wrapper {
+    padding-top: 6px;
+    padding-right: 0;
+
+    text-align: right;
+}
+
+.election__text {
+    margin-bottom: 5px;
+
+    font-size: 12px;
+    line-height: 15px;
+    font-family: $medium;
+    text-transform: uppercase;
+}
+
+.election__date {
+    font-family: $bold;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #000;
+}
+
+.election__count {
+    font-family: $regular;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.donation__amount {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+
+    font-family: $bold;
+    font-size: 28px;
+    line-height: 36px;
+
+    color: #000;
+}
+
+.donation__description {
+    padding: 0;
+    margin-bottom: 10px;
+
+    font-family: $regular;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.donation__progress {
+    margin-bottom: 10px;
+
+    width: 100%;
+    height: 7px;
+
+    background: #F0F0F0;
+    border-radius: 99px;
+}
+
+.progress__scale {
+    width: 63%;
+    height: 7px;
+    background: #2ACBA5;
+    border-radius: 99px;
+}
+
+.donation__goal {
+    padding: 0;
+    margin-bottom: 30px;
+
+    font-family: $regular;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.donation__days-count {
+    padding: 0;
+    margin-bottom: 30px;
+
+    text-align: right;
+
+    font-family: $medium;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.donation__btn {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    text-align: center;
+
+    background-color: $pink;
+    color: #fff;
+
+    border: none;
+    border-radius: 99px;
+
+    font-family: $medium;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: all .5s;
+    border: 1px solid transparent;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        border: 1px solid $pink;
+        background-color: #fff;
+        color: $pink;
+        text-decoration: none;
+    }
+
+    &:active {
+        opacity: .5s;
+    }
+}
+
+.candidate__link-btn {
+    display: inline-block;
+    width: 47%;
+    padding: 7px 5px 5px;
+
+    color: $violet;
+    border: 1px solid $violet;
+    border-radius: 99px;
+
+    font-family: $regular;
+    font-size: 12px;
+    line-height: 18px;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    transition: all .5s;
+
+    &:hover,
+    &:focus {
+        border: 1px solid #fff;
+        background-color: $violet;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &:active {
+        opacity: .5s;
+    }
+}
+
+@media (max-width: 768px) {
+    .candidate {
+        margin-bottom: 50px;
+    }
+
+	.candidate__wrapper {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .candidate {
+        margin-bottom: 33px;
+    }
+
+    .candidate__detail {
+        padding-top: 0;
+        margin-bottom: 28px;
+    }
+
+    .candidate__name {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    
+    .candidate__activity {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .election__wrapper {
+        padding-top: 0;
+    }
+
+    .election__text {
+        font-size: 10px;
+        line-height: 13px;
+        letter-spacing: 0.5px;
+    }
+
+    .election__date {
+        font-size: 14px;
+        line-height: 20px;;
+    }
+
+    .election__count {
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

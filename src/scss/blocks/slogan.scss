@@ -1,0 +1,31 @@
+.slogan__text {
+    margin-bottom: 30px;
+
+    font-size: 34px;
+    line-height: 50px;
+    font-family: $bold;
+    letter-spacing: 1px;
+
+    color: #000;
+
+    & span {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .slogan__text {
+        & span {
+            display: inline-block;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .slogan__text {
+        margin-bottom: 20px;
+        
+        font-size: 28px;
+        line-height: 39px;
+    }
+}
