@@ -14,11 +14,11 @@ gulp.task('style', function () {
 		.pipe(postcss([
 			autoprefixer()
 		]))
-		.pipe(gulp.dest('./build/css')) 
+		.pipe(gulp.dest('./src/css')) 
 		.pipe(browserSync.stream())
 		.pipe(csso())
 		.pipe(rename('style.min.css'))
-		.pipe(gulp.dest('./build/css'));
+		.pipe(gulp.dest('./src/css'));
 });
 
 gulp.task('serve', gulp.series('style', function() {
@@ -27,7 +27,7 @@ gulp.task('serve', gulp.series('style', function() {
     });
 
     gulp.watch("src/scss/**/*.scss", gulp.series('style'));
-	gulp.watch("./*.html").on('change', browserSync.reload);
+	gulp.watch("src/*.html").on('change', browserSync.reload);
 	gulp.watch("src/js/**/*.js").on('change', browserSync.reload);
 }));
 
@@ -36,7 +36,8 @@ gulp.task('copy', function() {
 		'./src/img/**',
 		'./src/js/**',
 		'./src/fonts/**/*.{woff,woff2}',
-		'./src/*.html'
+		'./src/*.html',
+		'./src/css/**',
 		], {
 			base: './src'
 		})
